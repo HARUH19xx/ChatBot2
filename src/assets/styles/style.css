@@ -1,0 +1,215 @@
+.c-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.c-box {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 592px;
+    max-width: 432px;
+    padding: 0 1rem;
+    width: 100%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.c-grid__answer {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    height: 192px;
+}
+
+/* .p-chat__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+} */
+
+.p-chat__bubble {
+    background: #41B6E6;
+    border-radius: 4px;
+    /* color: #fff; */
+    font-size: 14px;
+    font-weight: 500;
+    padding: .5rem;
+    margin-right: 1rem;
+    max-width: 80%;
+    width: auto;
+    width: 100%;
+}
+
+.p-chat__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-right: 0 !important;
+}
+
+.p-chat__reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding-right: 0 !important;
+}
+
+.p-question__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+}
+
+.p-question__description {
+    font-size: 1rem;
+    letter-spacing: .125rem;
+    line-height: 1.7;
+}
+
+/* 以下、改修後のコード */
+
+/* FormDialog.jsxのスタイル */
+
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dialog-title {
+    margin-top: 0;
+}
+
+.dialog-body {
+    margin-bottom: 20px;
+}
+
+.dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-cancel {
+    background: #ccc;
+}
+
+.button-submit {
+    background: #007bff;
+    color: white;
+}
+
+/* TextInput.jsxのスタイル */
+
+.text-input {
+    margin-bottom: 20px;
+}
+
+.text-input label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.text-input input,
+.text-input textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Chats.jsxのスタイル */
+
+.chats {
+    height: 400px;
+    padding: 0;
+    overflow: auto;
+}
+
+/* Chat.jsxのスタイル */
+
+.p-chat__row,
+.p-chat__reverse {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.p-chat__row .p-chat__avatar,
+.p-chat__reverse .p-chat__avatar {
+    margin-right: 16px;
+}
+
+.p-chat__reverse {
+    flex-direction: row-reverse;
+}
+
+.p-chat__reverse .p-chat__avatar {
+    margin-left: 16px;
+    margin-right: 0;
+}
+
+.p-chat__avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.p-chat__bubble {
+    padding: 8px 16px;
+    border-radius: 12px;
+    background-color: #f2f2f2;
+}
+
+/* AnswersList.jsxのスタイル */
+
+.c-grid__answer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Answer.jsxのスタイル */
+
+.custom-button {
+    border-color: #FFB549;
+    color: #FFB549;
+    font-weight: 600;
+    margin-bottom: 8px;
+    border: 1px solid;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #FFB549;
+    color: #fff;
+}

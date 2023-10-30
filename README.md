@@ -1,5 +1,5 @@
-数年前にReactで作った雑チャットボット。<br>
-ふと思い出してHooks方式に直したので、ついでにUP。<br>
+ChatBot made with ReactHooks.<br>
+I've recently remake this of React with ReactHooks.<br>
 
 <!-- # Getting Started with Create React App
 
